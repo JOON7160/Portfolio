@@ -1,0 +1,8 @@
+.layout {
+    width: 1280px;
+    margin: 0 auto;
+    @include mobile {
+        width: 100%;
+        padding: 20px;
+    }
+}

@@ -1,0 +1,31 @@
+@import 'abstracts/_mixin'; //mix
+@import 'abstracts/variables';//variables
+
+@import 'base/reset'; //rest
+@import 'base/typograhy'; //typography
+
+//layout
+@import 'layout/nav';//layout 
+@import 'layout/intro';//layout 
+@import 'layout/layout';//layout 
+@import 'layout/about';//layout 
+@import 'layout/skills';//layout 
+@import 'layout/practical';//layout 
+@import 'layout/website';//layout 
+@import 'layout/epilogue';//layout 
+
+//component
+@import 'component/trigger';//trigger
+@import 'component/introduction';//introduction
+@import 'component/_desc.scss';//desc
+@import 'component/symbol';//symbol
+@import 'component/tabs';//tabs
+@import 'component/swiper';//swiper
+@import 'component/link';//button
+@import 'component/featherlight';
+
+/* fontawesome */
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css);
+body {
+    font-family: $eg-font;
+}

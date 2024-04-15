@@ -1,0 +1,93 @@
+#practical {
+    padding: 200px 0;
+    h2 {
+        text-align: center;
+    }
+    @include mobile {
+        padding: 100px 0;
+        display: none;
+    }
+}
+.practical-content {
+    .content {
+        position: relative;
+        width: 100%;
+        height: 500px;
+        display: none;
+        @include mobile {
+            height: auto;
+            padding: 50px 0;
+        }
+    }
+    @for $n from 1 to 4 {
+        &:has(.tab:nth-of-type(#{$n}) input[type=radio]:checked) {
+            .practical-tabs__content#{$n} {
+                display: block;
+            }
+        }
+    }
+}
+.practical-tabs {
+    margin: 100px 0;
+    @include mobile {
+        flex-direction: column;
+        margin: 50px 0;
+    }
+}
+/* swiper */
+.swiper.effects__swiper,
+.swiper.form__swiper,
+.swiper.ui__swiper {
+    width: 90%;
+    margin: 0 auto;
+    position: static;
+}
+
+.cont {
+    width: 350px;
+    text-align: center;
+    &__image {
+        width: 100%;
+        height: 200px;
+        box-shadow: 0 0 10px $black45;
+        border-radius: 5px;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    &__txt {
+        margin-top: 20px;
+    }
+}
+
+/* slide */
+.ui__slide {
+    @for $s from 1 through 7 {
+        &#{$s} {
+            .cont__image {
+                background-image: url('#{$bgurl}'+'#{$ui}'+'#{$s}'+'.jpeg');
+                
+            }
+        }
+    }
+}
+.effects__slide {
+    @for $e from 1 through 5 {
+        &#{$e} {
+            .cont__image {
+                background-image: url('#{$bgurl}'+'#{$effect}'+'#{$e}'+'.png');
+                
+            }
+        }
+    }
+}
+.form__slide {
+    @for $f from 1 through 6 {
+        &#{$f} {
+            .cont__image {
+                background-image: url('#{$bgurl}'+'#{$form}'+'#{$f}'+'.jpeg');
+                
+            }
+        }
+    }
+}

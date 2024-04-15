@@ -1,0 +1,66 @@
+.introduction {
+    display: flex;
+    justify-content: space-between;
+    @include mobile {
+        gap: 40px;
+        flex-direction: column;
+        // display: none;
+    }
+    &__image {
+        width: 360px;
+        height: 460px;
+        border-radius: 70px;
+        overflow: hidden;
+        box-shadow: 0 0 10px $black45;
+        @include mobile {
+            width: 100%;
+            height: 50%;
+            border-radius: 50px;
+        }
+        img {
+            width: 100%;
+            transform: scale(1.6);
+            object-position:  60px -50px;
+            @include mobile {
+                object-position: 0 0;
+                display: block;
+                transform: scale(1.3);
+            }
+        }
+        
+    }
+    &__desc {
+        width: 700px;
+        @include mobile {
+            width: 100%;
+        }
+        .name {
+            font-family: $eg-font;
+            line-height: 2em;
+            span {
+                display: block;
+                color: $gray996;
+                font-size: 25px;
+            }
+            b {
+                color: $blue;
+                font-weight: bold;
+                font-size: 40px;
+            }
+            margin-bottom: 60px;
+            @include mobile {
+                margin-bottom: 20px;
+            }
+        }
+        p {
+            font-size: 23px;
+            font-weight: 300;
+            line-height: 2em;
+            @include mobile {
+                font-size: 16px;
+                word-break: keep-all;
+            }
+        }
+        
+    }
+}

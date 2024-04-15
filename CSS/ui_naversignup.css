@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+body {
+    font-size: 14px;
+    background: #f5f6f7;
+    line-height: 1.5em;
+    color: #222;
+    font-weight: 300;
+}
+a {text-decoration: none;color: inherit;}
+
+/* Reset CSS */
+input,
+select {
+    cursor: pointer;
+}
+.member-footer {
+    text-align: center;
+    font-size: 13px;
+    margin-top: 20px;
+}
+.member-footer div a:hover {
+    text-decoration: underline;
+    color: #2db400;
+}
+.member-footer div a::after {
+    content: "";
+    width: 1px;
+    height: 10px;
+    display: inline-block;
+    background: #afafaf;
+    margin-left: 5px;
+}
+.member-footer div a:last-of-type::after {
+    display: none;
+}
+.member {
+    width: 460px;
+    margin: 0 auto;
+}
+.member .logo {
+    height: 30px;
+    display: block;
+    margin: auto;
+}
+.field {
+    margin: 5px 0;
+}
+.field b {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.member input:not(input[type=radio]),
+.member select {
+    border: 1px solid #dadada;
+    padding: 15px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+.member input[type=button],
+.member input[type=submit] {
+    background-color: #2db400;
+    color: #fff;
+}
+.member input:focus,
+.member select:focus {
+    border: 1px solid #2db400;
+}
+.field.birth div {
+    display: flex;
+    gap: 10px;
+}
+.field.tel-num div {
+    display: flex;
+    gap: 10px;
+}
+.field.tel-num input:nth-of-type(1) {
+    flex: 2;
+}
+.field.tel-num input:nth-of-type(2) {
+    flex: 1;
+}
+.field.gender div {
+    border: 1px solid #dadada;
+    background-color: #fff;
+    padding: 15px 5px;
+}
+.placehold-txt {
+    position: relative;
+    display: block;
+}
+.placehold-txt::before {
+    position: absolute;
+    right: 20px;
+    top: 14px;
+    font-size: 18px;
+    content: "@naver.com";
+    pointer-events: none;
+}
+.userpw {
+    background: #fff url(../images/practical/ui_icon-01.png)no-repeat center right 10px;
+    background-size: 20px;
+}
+.userpw-confirm {
+    background: #fff url(../images/practical/ui_icon-02.png)no-repeat center right 10px;
+    background-size: 20px;
+}
+
+/* custom select & input  */
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #fff url(../images/practical/ui_icon-select.png)no-repeat center right 5px;
+}
+input[type=number]::-webkit-outer-spin-button, 
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.field.gender div {
+    gap: 10px;
+    display: flex;
+}
+.field.gender label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.field.gender div em {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 2px;
+    background: url(../images/practical/ui_icon-radio.png)no-repeat left center;
+}
+.field.gender div input[name=gender]:checked ~ em {
+    background: url(../images/practical/ui_icon-radio.png)no-repeat right center;
+}
+input[name=gender] {
+    display: none;
+}
+@media (max-width : 768px) {
+    .member {
+        width: 100%;
+        padding: 0 10px;
+    }
+}

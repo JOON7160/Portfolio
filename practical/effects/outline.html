@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아웃라인 텍스트</title>
+    <style>
+        body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+}
+.btn {
+    position: relative;
+    color: transparent;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 10em;
+    -webkit-text-stroke: 1px #fff;
+}
+.btn:hover {
+    color: #fff;
+}
+.btn:hover::before{
+    opacity: 1;
+    transform: translate(10px,-10px);
+}
+.btn:hover::after{
+    opacity: 1;
+    transform: translate(20px,-20px);
+}
+.btn::before,
+.btn::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-text-stroke: transparent;
+    content: attr(data-txt);
+    transition: .3s;
+    opacity: 0;
+    
+}
+.btn::before {
+    color: royalblue;
+}
+.btn::after {
+    color: crimson;
+}
+    </style>
+</head>
+<body>
+    <a href="#none" class='btn' data-txt="Portfolio">Portfolio</a>
+</body>
+</html>

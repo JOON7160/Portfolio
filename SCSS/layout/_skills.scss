@@ -1,0 +1,34 @@
+#skills {
+    h2 {
+        text-align: center;
+    }
+    background: $lightblued9;
+    padding: 60px 0;
+}
+.skills__list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    @include mobile {
+        flex-direction: column;
+        gap: 50px;
+    }
+}
+.skills__item {
+    width: 250px;
+    @include mobile {
+        width: 100%;
+    }
+    p {
+        line-height: 1.6em;
+        word-break: keep-all;
+        @include mobile {
+            line-height: 2em;
+
+        }
+    }
+    &:nth-child(3) .icon {
+        width: auto;
+        padding: 0 10px;
+    }
+}

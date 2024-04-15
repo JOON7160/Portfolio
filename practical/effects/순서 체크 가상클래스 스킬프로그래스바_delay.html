@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>skill progress bar</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .skill-progress {
+            width: 500px;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 10px 10px rgb(161, 161, 161);
+            text-align: center;
+            color: #fff;
+            background: #333;
+        }
+        .item {}
+        .skill-progress p{
+            overflow: hidden;
+            margin-bottom: 5px;
+        }
+        .skill-progress p span:nth-of-type(1) {float:left;}
+        .skill-progress p span:nth-of-type(2) {float: right;}
+        .progress {
+            border: 1px solid #fff;
+            padding: 5px;
+        }
+        .progress-level {
+            height: 10px;
+            background: linear-gradient(to right,crimson,gold);
+            animation: ani 2s;
+            animation-fill-mode: both;
+        }
+        @keyframes ani {
+            0% {
+                width: 0;
+            }
+        }
+        .skill-progress .item:nth-of-type(1) .progress-level {
+            animation-delay: 0;
+        }
+        .skill-progress .item:nth-of-type(2) .progress-level {
+            animation-delay: 0.2s;
+        }
+        .skill-progress .item:nth-of-type(3) .progress-level {
+            animation-delay: 0.4s;
+        }
+        .skill-progress .item:nth-of-type(4) .progress-level {
+            animation-delay: 0.6s;
+        }
+        .skill-progress .item:nth-of-type(5) .progress-level {
+            animation-delay: 0.8s;
+        }
+        </style>
+</head>
+<body>
+    <div class="skill-progress">
+        <h2>영업팀별 목표달성률</h2>
+        <div class="item">
+            <p>
+                <span>영업1팀</span>
+                <span>90%</span>
+            </p>
+            <div class="progress">
+                <div class="progress-level" style="width: 90%;"></div>
+            </div>
+        </div>
+        <div class="item">
+            <p>
+                <span>영업2팀</span>
+                <span>80%</span>
+            </p>
+            <div class="progress">
+                <div class="progress-level" style="width: 80%;"></div>
+            </div>
+        </div>
+        <div class="item">
+            <p>
+                <span>영업3팀</span>
+                <span>65%</span>
+            </p>
+            <div class="progress">
+                <div class="progress-level" style="width: 65%;"></div>
+            </div>
+        </div>
+        <div class="item">
+            <p>
+                <span>영업4팀</span>
+                <span>70%</span>
+            </p>
+            <div class="progress">
+                <div class="progress-level" style="width: 70%;"></div>
+            </div>
+        </div>
+        <div class="item">
+            <p>
+                <span>영업5팀</span>
+                <span>90%</span>
+            </p>
+            <div class="progress">
+                <div class="progress-level" style="width: 90%;"></div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

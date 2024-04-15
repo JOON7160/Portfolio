@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="../../CSS/ui_searchbar.css">
+    <title>검색창 확장하기</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="../../images/practical/search_logo.jpg" alt="logo">
+            </div>
+            <div class="search ">
+                <div class="icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="input-frame">
+                    <input type="text" placeholder='킹사이즈 침대 찾아보기' id='searchInput'>
+                </div>
+                <span class="clear">
+                    <i class="fa-solid fa-x"></i>
+                </span>
+            </div>
+        </header>
+        <main>
+            <div class="main__txt">
+                <h1>EAMESTO</h1>
+                <p>
+                    다양한 가구를 만나보세요.
+                </p>
+            </div>
+        </main>
+        <section class='interior__section'>
+            <div class="interior__content">
+                <div class="section__image"></div>
+                <div class="section__txt">
+                    <h2>다양한 인테리어를 찾아보세요.</h2>
+                    <p>
+                        다양한 인테리어 소품을 찾아보세요.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+<script>
+    const icon = document.querySelector('.icon')
+    const search = document.querySelector('.search')
+    const clear = document.querySelector('.clear')
+    const searchInput = document.getElementById('searchInput');
+    const section = document.getElementsByTagName('section')
+
+    //click, active 
+    icon.onclick = function() {
+        search.classList.toggle('active')
+    }
+    clear.onclick = function() {
+        searchInput.value = ""
+    }
+    section.onclick = function() {
+        search.classList.remove('active')
+    }
+    for (var i=0; section.length; i++) {
+        section[i].onclick = function(){
+            search.classList.remove('active')
+        }
+    }
+</script>
+</html>

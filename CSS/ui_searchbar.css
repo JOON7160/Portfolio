@@ -1,0 +1,129 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    margin: 0;
+    color: #333;
+    font-size: 18px;
+    line-height: 1.2em;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+/* JavaScript & jQuery - Search field expand  */
+header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 120px;
+    background: #fff;
+    box-shadow: 0 0 10px #00000042;
+    z-index: 100;
+}
+.logo {
+    height: 100px;
+}
+.logo img {
+    height: 100%;
+    object-fit: cover;
+
+}
+/* ###### main section ######  */
+main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding-top: 150px;
+    background: url(../images/practical/search_image.jpeg) no-repeat center center / cover;
+}
+.main__txt {
+    position: absolute;
+    top: 300px;
+    right: 100px;
+    z-index: 100;
+    color: #fff;
+    font-size: 50px;
+}
+.interior__section {
+    padding-top: 100px;
+    width: 100%;
+    height: 100vh;
+}
+.interior__content {
+    display: flex;
+}
+.section__image {
+    width: 50%;
+    height: 100vh;
+    flex: 1;
+    background: url(../images/practical/section_image.jpg) no-repeat center right / cover;
+}
+.section__txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    width: 50%;
+    height: 100vh;
+
+}
+
+/* search CSS  */
+.search {
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 0 10px #00000020;
+    overflow: hidden;
+    transition: 0.5s;
+    border-radius: 50px 50px 50px 50px;
+    margin-right: 30px;
+}
+.search.active {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+}
+.search.active .icon {
+    margin-left: 10px;
+}
+.icon {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 26px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.clear {
+    margin-right: 20px;
+    cursor: pointer;
+}
+.input-frame {
+    width: 300px;
+}
+.input-frame input[type=text]{
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 18px;
+
+}
+.input-frame input[type=text]::placeholder {
+    transition: 0.3s;
+}
+.input-frame input[type=text]:focus::placeholder {
+    opacity: 0;
+}

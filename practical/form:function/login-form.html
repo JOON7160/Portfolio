@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login-form</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .login {
+            width: 600px;
+            padding: 30px;
+            box-sizing: border-box;
+            box-shadow: 0 0 10px #00000077;
+        }
+        .login h2 {}
+        .sns {
+            display: flex;
+            margin: 20px 0;
+        }
+        .btn {
+            flex: 1;
+            padding: 7px;
+            color: #fff;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+        .btn.facebook {
+            background: royalblue;
+        }
+        .btn.twitter {
+            background: gold;
+            margin: 0 5px;
+        }
+        .btn.google {
+            background: red;
+        }
+        .field {
+            display: flex;
+            margin: 10px 0;
+            
+        }
+        .field label {
+            flex: 1;
+        }
+        .field input {
+            flex: 3;
+            padding: 5px 0;
+        }
+        .btn-login {
+            float: right;
+            padding: 10px 20px;
+            color: #fff;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            border-radius: 3px;
+            background: royalblue;
+        }
+        @media (max-width : 768px) {
+            .sns {
+            display: flex;
+            margin: 20px 0;
+            flex-direction: column;
+            }
+            .btn {
+                margin: 10px 0;
+            }
+            .btn.twitter {
+                margin: 0
+            }
+            .field {
+                flex-direction: column;
+            }
+            .btn-login {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+        <div class="login">
+            <h2>registeration</h2>
+            <div class="sns">
+                <button class="btn facebook">Login in with Facebook</button>
+                <button class="btn twitter">Login in with Twitter</button>
+                <button class="btn google">Login in with Google</button>
+            </div>
+            <div class="field">
+                <label>user name</label><input type="text">
+            </div>
+            <div class="field">
+                <label>E-mail</label><input type="email">
+            </div>
+            <div class="field">
+                <label>Password</label><input type="password">
+            </div>
+            <button class="btn-login">log in</button>
+        </div>
+</body>
+</html>

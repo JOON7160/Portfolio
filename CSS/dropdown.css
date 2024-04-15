@@ -1,0 +1,107 @@
+/* Google Web Fonts CDN */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+/* Fontawesome 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+/* xeicon 2.3.3  */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+ * {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+    font-weight: 300;
+}
+a {
+    text-decoration: none;
+    color: gainsboro;
+}
+
+/* metflix FAQ */
+.container {
+    height: 100vh;
+}
+.faq-inner {
+    width: 700px;
+    margin: auto;
+}
+.container h2 {
+    text-align: center;
+}
+.accodion { }
+.accodion .title, 
+.accodion .content {
+    width: 100%;
+    padding: 20px 10px;
+    margin-bottom: 5px;
+    background:#2D2D2D;
+    box-sizing: border-box;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.accodion .title:hover {
+    opacity: 1;
+}
+.accodion .title::after {
+    float: right;
+    font-size: 25px;
+    content: '\e913';
+    font-family : xeicon;
+    transition: 0.3s;
+}
+.accodion .title.active::after {
+    transform: rotate(45deg);
+}
+.accodion .content {
+    display: none;
+}
+.accodion .content a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: underline;
+}
+.email {margin-top: 50px;}
+.email p {
+    width: 100%;
+    text-align: center;
+}
+.contact {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.contact input[type=email] {
+    position: relative;
+    width: 60%;
+    padding: 18px 10px;
+    border-radius: 5px;
+    background: #0F0F0F;
+    border: 1px solid #eeeeee7c;
+    box-sizing: border-box;
+    margin-right: 10px;
+    color: #fff;
+
+}
+.contact input[type=email]:focus {
+    outline: 2px solid #fff;
+}
+
+.btn {
+    width: 20%;
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    box-sizing: border-box;
+    background: #E50815;
+    outline: none;
+    border: none;
+}

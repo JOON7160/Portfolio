@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hover 외 메뉴 흐려지는 네비게이션 </title>
+    <style>
+        body {
+            color: #222;
+            line-height: 1.5em;
+            font-weight: 300;
+            background: royalblue;
+            margin: 0;
+        }
+        a {
+            color: #222;
+            text-decoration: none;
+        }
+        .gnb {
+            position: absolute;
+            top: 50%;
+            left: 5%;
+            transform: translateY(-50%);
+        }
+        .gnb a{
+            display: block;
+            margin-top: 20px;
+            font-size: 2em;
+            color: #fff;
+            transition: 0.5s;
+        }
+        .gnb:hover a {
+            opacity: 0.3;
+        }
+        .gnb a:hover {
+            opacity: 1;
+        }
+        .gnb a::before {
+            content: ">";
+            margin-right: 10px;
+            opacity: 0;
+        }
+        .gnb a:hover::before {
+            opacity: 1;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="gnb">
+        <a href="#none">NEW Arrivals</a>
+        <a href="#none">Summer Collection</a>
+        <a href="#none">Winter Collection</a>
+        <a href="#none">Special Offers</a>
+        <a href="#none">Trends</a>
+    </div>
+
+    
+</body>
+</html>

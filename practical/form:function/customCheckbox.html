@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>커스텀 체크박스 </title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .wrap {
+            width: 500px;
+            padding: 50px;
+            border-radius: 5px;
+            text-align: center;
+            box-shadow: 0 0 10px #00000021;
+        }
+        input[id=checkbox] {
+            display: none;
+        }
+        label[for=checkbox] {
+            cursor: pointer;
+        }
+        label[for=checkbox] em {
+            width: 18px;
+            height: 18px;
+            display: inline-block;
+            vertical-align: middle;
+            background: url(../../images/practical/form_checkbox-03.png)no-repeat;
+            background-position: left center;
+        }
+        input[id=checkbox]:checked + label[for=checkbox] em {
+            background-position: right center;
+        }
+        .grade input {
+            display: none;
+        }
+        .grade label {
+            cursor: pointer;
+        }
+        .grade label em {
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            background: url(../../images/practical/form_radio-01.png) no-repeat;
+            background-position: left center;
+            vertical-align: middle;
+        }
+        input[id=elemet]:checked + label[for=elemet] em,
+        input[id=middle]:checked + label[for=middle] em,
+        input[id=high]:checked + label[for=high] em,
+        input[id=collegue]:checked + label[for=collegue] em {
+            background-position: right center;
+        }
+        .grade input:checked + label {
+            color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="layout">
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox">
+                <em></em>
+                약관을 충분히 이해하였으며 동의 합니다.
+            </label>
+            <hr>
+            <div class="grade">
+                <input type="radio" name="age" id="elemet">
+                <label for="elemet">
+                    <em></em>
+                    초등학생
+                </label>
+                <input type="radio" name="age" id="middle">
+                <label for="middle">
+                    <em></em>
+                    중학생
+                </label>
+                <input type="radio" name="age" id="high">
+                <label for="high">
+                    <em></em>
+                    고등학생
+                </label>
+                <input type="radio" name="age" id="collegue">
+                <label for="collegue">
+                    <em></em>
+                    대학생
+                </label>
+            </div>
+    
+        </div>
+        
+    </div>
+</body>
+</html>

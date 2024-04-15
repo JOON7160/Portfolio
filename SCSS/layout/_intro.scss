@@ -1,0 +1,37 @@
+#intro {
+    width: 100%;
+    height: 100vh;
+    background: $lightblue9b;
+    color: $whiteff;
+    @include mobile {
+        height: 60vh;
+    }
+}
+.title {
+    @include center;
+    text-align: center;
+    @include mobile {
+        position: relative;
+    }
+    h1 {
+        font-family: $eg-font;
+        font-size: 100px;
+        margin-bottom: 40px;
+        letter-spacing: 0.1em;
+        @include mobile {
+            font-size: 50px;
+        }
+    }
+    b {
+        border: 1px solid $whiteff;
+        font-size: 30px;
+        width: 360px;
+        height: 68px;
+        padding: 20px 60px;
+        border-radius: 20px;
+        @include mobile {
+            padding: 10px;
+            font-size: 20px;
+        }
+    }
+}

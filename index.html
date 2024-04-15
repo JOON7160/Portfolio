@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- JQuery CDN  -->
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Swiper CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Featherlight JS & CSS  -->
+    <script src="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.js"></script>
+    <link rel="stylesheet" href="./js/featherlight/featherlight.css">
+    <!-- custom JS & CSS -->
+    <script src='./js/custom.js' defer></script>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Webpublisher portfolio</title>
+</head>
+<body>
+    <div class="wrap">
+        <button class="trigger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class='gnb'>
+            <ul class='gnb__list'>
+                <li><a href="#intro">Intro</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#practical">Practical publishing</a></li>
+                <li><a href="#website">Website publishing</a></li>
+                <li><a href="#epilogue">Epilogue</a></li>
+            </ul>
+            </div>
+        </nav>
+        <section id='intro'>
+            <div class="title">
+                <h1>portfolio</h1>
+                <b>웹퍼블리셔_허정준</b>
+            </div>
+        </section>
+    </div>
+    <section id="about">
+        <div class="layout">
+            <h2 class='hide'>about</h2>
+            <div class="about__introduction introduction">
+                <div class="introduction__image">
+                    <img src="./images/main/about-img.JPG" alt="허정준">
+                </div>
+                <div class="introduction__desc">
+                    <div class="name">
+                        <span>Web publisher</span>
+                        <b>Heo Jung Joon</b>
+                    </div>
+                    <p>
+                        <b>기본이 무엇보다 중요하다 </b>생각합니다. <br>
+                        한 섹션을 만들더라도 <b>의미에 맞게, 속성에 맞게</b> 쓰려 노력합니다. <br>
+                        또한, 기획부터 코딩까지 <b>체계적으로 퍼블리싱</b>합니다. <br> 
+                        불필요한 수정은 줄이며 수정과 보수를 할땐 빠르게 처리해나가겠습니다. <br>
+                        기본과 체계적인 퍼블리싱을 지켜 실무에 빠르게 적응하며 성장하는 <br>
+                        웹퍼블리셔가 되겠습니다.
+                    </p>
+                </div>
+            </div>
+            <div class="about__desc desc">
+                <h3>what I Think</h3>
+                <ul class="desc__list">
+                    <li class='desc__item'>
+                        <div class="icon"><i class="fa-solid fa-square-pen"></i></div>
+                        <div class="info">
+                            <b>퍼블리싱 기본기</b>
+                            <p>
+                                인덴트,주석, HTML과 CSS의 속성을 고려하는 등 기본을 놓치지 않고 습관화하여 
+                                팀으로 협업할 때 착오 없이 진행할 수 있도록
+                                노력하고 있습니다.  
+                            </p>
+                        </div>
+                    </li>
+                    <li class='desc__item'>
+                        <div class="icon">
+                            <i class="fa-regular fa-note-sticky"></i>
+                        </div>
+                        <div class="info">
+                            <b>기획을 고려한 퍼블리싱</b>
+                            <p>
+                                직접 기획서를 작성해 보면서 UI/UX 측면도 함께 고려하였습니다.
+                                심미성 뿐이 아닌 편의성도 고려한 퍼블리싱을 중요하게 생각합니다. 
+                            </p>
+                        </div>
+                    </li>
+                    <li class='desc__item'>
+                        <div class="icon"><i class="fa-solid fa-gears"></i></div>
+                        <div class="info">
+                            <b>체계적인 퍼블리싱</b>
+                            <p>
+                                와이어프레임 구조를 먼저 생각합니다.
+                                한 태그를 쓸때도 시멘틱 태그를 생각하고, CSS와 제이쿼리가 상호작용하는 부분도 함께 고려하며 작업합니다.  
+                            </p>
+                        </div>
+                    </li>
+                    <li class='desc__item'>
+                        <div class="icon"><i class="fa-solid fa-comments"></i></div>
+                        <div class="info">
+                            <b>빠른 적응력</b>
+                            <p>
+                                SCSS, git 등 실무에 필요한 부분을 배워 적용하려 노력합니다.
+                                부족한 부분은 인정하고 필요한 부분을 배워 실무에 필요한 인재가 되겠습니다. 
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <div class="layout">
+            <h2>Skills</h2>
+            <ul class="skills__list">
+                <li class='skills__item'>
+                    <div class="symbol">
+                        <div class="icon">
+                            H
+                        </div>
+                        <b>HTML</b>
+                    </div>
+                    <p>
+                        웹 표준과 웹접근성을 준수하는 HTML 구조설계를하기 위해 고심합니다. <br>
+                        특히 웹표준을 위해 HTML5에서 권장하는 마크업 방식과 시멘틱 태그를 사용합니다. <br>
+                        클래스 네임과 정보구조설계를 꼼꼼히하고 작업을 진행합니다. <br>
+                        전체적인 폰트서식, 컬러 가이드, 와이어프레임 등을 미리 짠 후 체계적인 퍼블리싱을 수행합니다.
+                    </p>
+                </li>
+                <li class='skills__item'>
+                    <div class="symbol">
+                        <div class="icon">
+                            C
+                        </div>
+                        <div class="icon">
+                            S
+                        </div>
+                        <b>CSS/SCSS(SASS)</b>
+                    </div>
+                    <p>
+                        크로스브라우징을 위해 안정적인 CSS속성을 사용해서 디자인합니다.
+                        최적화를 위해 불필요한 플러그인은 최소화하고 CSS로 구현을 우선시합니다. <br>
+                        네스팅, 컴포넌트화,mixins 등 빠른 업무를 위해 SCSS를 사용하여 퍼블리싱을 합니다.
+                    </p>
+                </li>
+                <li class='skills__item'>
+                    <div class="symbol">
+                        <div class="icon">
+                            RW
+                        </div>
+                        <b>Responsive Web</b>
+                    </div>
+                    <p>
+                        반응형 웹 제작에 있어서 크로스브라우징을 위해 float,position,media Query를 사용할 줄 알며
+                        flex를 활용한 웹페이지 제작도 가능합니다.
+                    </p>
+                </li>
+                <li class='skills__item'>
+                    <div class="symbol">
+                        <div class="icon">
+                            JS
+                        </div>
+                        <b>JQuery</b>
+                    </div>
+                    <p>
+                        네비게이션,탭 메뉴, 어코디언 등 퍼블리싱에 필요한 기능적인 부분을 순수한
+                        제이쿼리 코딩으로 제작합니다.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="practical">
+        <div class="layout">
+            <h2>Practical publishing</h2>
+            <div class="practical-content">
+                <ul class="practical-tabs tabs">
+                    <li class='tab'>
+                        <input type="radio" name="tabs" id="tab1" checked>
+                        <label for="tab1">UI</label>
+                    </li>
+                    <li class="tab">
+                        <input type="radio" name="tabs" id="tab2" >
+                        <label for="tab2">Effects</label>
+                    </li>
+                    <li class="tab">
+                        <input type="radio" name="tabs" id="tab3">
+                        <label for="tab3">form/function</label>
+                    </li>
+                </ul>
+                <div class="practical-tabs__content1 content">
+                    <div class="ui__swiper swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide ui__slide1">
+                                <div class="swiper-cont cont">
+                                    <a href="./practical/UI/순서 체크 가상클래스 이미지 어코디언.html" data-featherlight="iframe">                                        <div class="cont__image">
+                                            
+                                        </div>
+                                        <div class="cont__txt">
+                                            <b>이미지 어코디언</b>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide ui__slide2">
+                                <div class="swiper-cont cont">
+                                    <a href="./practical/UI/searchbar.html" data-featherlight="iframe">                                        <div class="cont__image">
+                                            
+                                        </div>
+                                        <div class="cont__txt">
+                                            <b>search bar 확장</b>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide ui__slide3">
+                                <div class="swiper-cont cont">
+                                    <a href="./practical/UI/index-dark-change.html" data-featherlight="iframe">                                        <div class="cont__image">
+                                            
+                                        </div>
+                                        <div class="cont__txt">
+                                            <b>profile UI dark mode</b>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide ui__slide4">
+                                <div class="swiper-cont cont">
+                                    <a href="./practical/UI/위아래로 분리되는 호버 네비게이션.html" data-featherlight="iframe">                                        <div class="cont__image">
+                                            
+                                        </div>
+                                        <div class="cont__txt">
+                                            <b>위 아래로 분리되는 UI</b>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide ui__slide5">
+                                <div class="swiper-cont cont">
+                                    <a href="./practical/UI/table.html" data-featherlight="iframe">                                        <div class="cont__image">
+                                            
+                                        </div>
+                                        <div class="cont__txt">
+                                            <b>table design</b>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide ui__slide6">
+                                <div class="swiper-cont cont">
+                                    <a href="./practical/UI/hover 외 메뉴 흐려지는 네비.html" data-featherlight="iframe">                                        <div class="cont__image">
+                                            
+                                        </div>
+                                        <div class="cont__txt">
+                                            <b>hover 흐려지는 네비게이션</b>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide ui__slide7">
+                                <div class="swiper-cont cont">
+                                    <a href="./practical/UI/gallery.html" data-featherlight="iframe">                                        <div class="cont__image">
+                                            
+                                        </div>
+                                        <div class="cont__txt">
+                                            <b>gallery UI</b>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="swiper-button-prev ui__btn-prev"><span class="hide">이전</span></button>
+                        <button class="swiper-button-next ui__btn-next">
+                            <span class="hide">다음</span>
+                        </button>
+                        <div class="swiper-pagination swiper-pagination-bullets">
+                        </div>
+                    </div>
+                </div>
+                <div class="practical-tabs__content2 content">
+                    <div class="effects__swiper swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide effects__slide1">
+                                <div class="swiper-cont cont">
+                                    <a href="./practical/effects/내비게이션_분리_rotate.html" data-featherlight="iframe">                                        <div class="cont__image">
+                                            
+                                        </div>
+                                        <div class="cont__txt">
+                                            <b>분리되는 내비게이션</b>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide effects__slide2">
+                                <div class="swiper-cont cont">
+                                    <a href="./practical/effects/순서 체크 가상클래스 스킬프로그래스바_delay.html" data-featherlight="iframe">                                        <div class="cont__image">
+                                            
+                                        </div>
+                                        <div class="cont__txt">
+                                            <b>progressBar</b>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide effects__slide3">
+                                <div class="swiper-cont cont">
+                                    <a href="./practical/effects/더블보더레디어스.html" data-featherlight="iframe">                                        <div class="cont__image">
+                                            
+                                        </div>
+                                        <div class="cont__txt">
+                                            <b>더블 보더레디어스 effects</b>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide effects__slide4">
+                                <div class="swiper-cont cont">
+                                    <a href="./practical/effects/content attr을 활용한 텍스트 네비게이션.html" data-featherlight="iframe">                                        <div class="cont__image">
+                                            
+                                        </div>
+                                        <div class="cont__txt">
+                                            <b>menu effect</b>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide effects__slide5">
+                                <div class="swiper-cont cont">
+                                    <a href="./practical/effects/outline.html" data-featherlight="iframe">                                        <div class="cont__image">
+                                            
+                                        </div>
+                                        <div class="cont__txt">
+                                            <b>hover effect</b>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="swiper-button-prev effects__btn-prev"><span class="hide">이전</span></button>
+                        <button class="swiper-button-next">
+                            <span class="hide">다음</span>
+                        </button>
+                        <div class="swiper-pagination swiper-pagination-bullets">
+                        </div>
+                    </div>
+                </div>
+                <div class="practical-tabs__content3 content">
+                    <div class="form__swiper swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide form__slide1">
+                                <div class="swiper-cont cont">
+                                    <a href="./practical/form:function/fullscreen slide.html" data-featherlight="iframe">                                        <div class="cont__image">
+                                            
+                                        </div>
+                                        <div class="cont__txt">
+                                            <b>trigger,fullscreen </b>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide form__slide2">
+                                <div class="swiper-cont cont">
+                                    <a href="./practical/form:function/dropdown.html" data-featherlight="iframe">                                        <div class="cont__image">
+                                            
+                                        </div>
+                                        <div class="cont__txt">
+                                            <b>dropdown accodion </b>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide form__slide3">
+                                <div class="swiper-cont cont">
+                                    <a href="./practical/form:function/customCheckbox.html" data-featherlight="iframe">                                        <div class="cont__image">
+                                            
+                                        </div>
+                                        <div class="cont__txt">
+                                            <b>custom Checkbox </b>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide form__slide4">
+                                <div class="swiper-cont cont">
+                                    <a href="./practical/form:function/prototype.html" data-featherlight="iframe">                                        <div class="cont__image">
+                                            
+                                        </div>
+                                        <div class="cont__txt">
+                                            <b> transition prototype </b>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide form__slide6">
+                                <div class="swiper-cont cont">
+                                    <a href="./practical/form:function/login-form.html" data-featherlight="iframe">                                        <div class="cont__image">
+                                            
+                                        </div>
+                                        <div class="cont__txt">
+                                            <b> loginin form </b>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide form__slide5">
+                                <div class="swiper-cont cont">
+                                    <a href="./practical/form:function/signup.html" data-featherlight="iframe">                                        <div class="cont__image">
+                                            
+                                        </div>
+                                        <div class="cont__txt">
+                                            <b> Naver Sign up form </b>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="swiper-button-prev"><span class="hide">이전</span></button>
+                        <button class="swiper-button-next">
+                            <span class="hide">다음</span>
+                        </button>
+                        <div class="swiper-pagination swiper-pagination-bullets">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="website">
+        <div class="layout">
+            <h2>Website publishing</h2>
+            <div class="website-content">
+                <ul class="website-tabs tabs">
+                    <li class='tab'>
+                        <input type="radio" name="website" id="webtab1" checked>
+                        <label for="webtab1">Novita</label>
+                    </li>
+                    <li class="tab">
+                        <input type="radio" name="website" id="webtab2">
+                        <label for="webtab2">Mydata</label>
+                    </li>
+                </ul>
+                <div class="website-tabs__content1 webcont">
+                    <div class="webcont__image">
+                    </div>
+                    <div class="webcont__desc info">
+                        <div class="info__detail">
+                            <h3>Novita</h3>
+                            <div class="top_cont">
+                                <ul class='list_1st info__list'>
+                                    <li><b>Viewport</b>responsive</li>
+                                    <li><b>Color</b>
+                                        <span class='color'></span>
+                                        <span class='color'></span>
+                                        <span class='color'></span></li>
+                                    <li><b>Font_Kr</b>
+                                        Noto Sans KR
+                                    </li>
+                                    <li><b>Font_Eg</b>
+                                        Kumbh Sans
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="btm_cont">
+                                <ul class='list_2nd info__list'>
+                                    <li><b>작업기간</b> 약2주</li>
+                                    <li class='align'><b>제작방식</b> <p>HTML,CSS(SCSS),JQuery</p></li>
+                                    <li><b>작업참여</b> 100%</li>
+                                    <li class='align'><b>참고사항</b> 
+                                        <p>
+                                            Pure CSS를 사용하려고 노력하였으며, 모든 퍼블리싱 작업을 하드코딩으로 작업함.
+                                        </p></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="info__link">
+                            <a href="./website/novita-clone/novita.html" class='link' data-featherlight="iframe">PC ver</a>
+                            <a href="./website/novita-clone/novita-mockup.html" class='link' data-featherlight="iframe">Mobile ver</a>
+                            <a href="./website/novita-clone/novita.html" class='link mo' data-featherlight="iframe" >View</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="website-tabs__content2 webcont">
+                    <div class="webcont__image">
+                    </div>
+                    <div class="webcont__desc info">
+                        <div class="info__detail">
+                            <h3>Mydata</h3>
+                            <div class="top_cont">
+                                <ul class='list_1st info__list'>
+                                    <li><b>Viewport</b>responsive</li>
+                                    <li><b>Color</b>
+                                        <span class='color mydata'></span>
+                                        <span class='color mydata'></span>
+                                        <span class='color mydata'></span></li>
+                                    <li><b>Font_Kr</b>
+                                        Noto Sans KR
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="btm_cont">
+                                <ul class='list_2nd info__list'>
+                                    <li><b>작업기간</b> 약2주</li>
+                                    <li class='align'><b>제작방식</b> <p>HTML,CSS(SCSS),JQuery</p></li>
+                                    <li><b>작업참여</b> 100%</li>
+                                    <li class='align'><b>참고사항</b> 
+                                        <p>
+                                            Pure CSS를 사용하려고 노력하였으며, 모든 퍼블리싱 작업을 하드코딩으로 작업함.
+                                        </p></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="info__link">
+                            <a href="./website/mydata-clone/mydata_clone.html" class='link' data-featherlight="iframe">PC ver</a>
+                            <a href="./website/mydata-clone/mydata-mockup.html" class='link' data-featherlight="iframe">Mobile ver</a>
+                            <a href="./website/mydata-clone/mydata_clone.html" class='link mo' data-featherlight="iframe">View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="eplilogue">
+        <div class="layout">
+            <div class="eilogue__txt">
+                <b>Publishing With <span>Basic</span></b>
+                <p>
+                    기본을 원칙으로 빠른 업무능력을 보여드리겠습니다. <br>
+                    부족한 점은 인정하고 맡겨진 업무에 책임감을 가지고 해나가는 팀원이 되겠습니다.
+                </p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

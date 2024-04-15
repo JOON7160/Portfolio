@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>위 아래로 분리되는 호버 네비게이션</title>
+    <style>
+        body {
+            font-size: 15px;
+            color: #222;
+            line-height: 1.5em;
+            font-weight: 300;
+            background: #333;
+            color: #fff;
+            margin: 0;
+        }
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .items {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+        }
+        .item {
+            position: relative;
+            display: inline-block;
+            width: 300px;
+            height: 200px;
+            margin: 10px;
+        }
+        .front,
+        .back {
+            position: absolute;
+            top: 0;
+            width: inherit;
+            height: inherit;
+            transition: 0.5s;
+        }
+        .front {
+            background: yellowgreen;
+            z-index: 1;
+        }
+        .front h2{
+            margin: 0;
+        }
+        .back {
+            padding: 20px;
+            text-align: center;
+            box-sizing: border-box;
+            background: #000;
+            opacity: 0;
+        }
+        .item .back a{
+            background: #fff;
+            color: #000;
+            padding: 5px 15px;
+            border-radius: 10px;
+        }
+        .item:hover .front img {
+            animation: ani 1s linear infinite;
+        }
+        .item:hover .front {
+            top: -50%;
+        }
+        .item:hover .back {
+            top: 50%;
+            opacity: 1;
+        }
+        @keyframes ani {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+            100% {}
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="items">
+        <div class="item">
+            <div class="front">
+                <img src="../../images/practical/ui_space-01.png" alt="mars">
+                <h2>Mars</h2>
+            </div>
+            <div class="back">
+                <p>
+                    화성은 태양계의 네 번째 행성이다. 4개의 지구형 행성 중 하나다. 동양권에서는 불을 뜻하는 화(火)를 써서 화성이라 부르고 로마 신화의 전쟁의 신 마르스의 이름을 따 Mars라 부른다.
+                </p>
+                <a href="#none">Read More</a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="front">
+                <img src="../../images/practical/ui_space-02.png" alt="Jupiter">
+                <h2>Jupiter</h2>
+            </div>
+            <div class="back">
+                <p>
+                    목성은 태양계의 다섯번째 행성이자 가장 큰 행성이다. 태양의 질량의 천분의 일배에 달하는 거대행성으로, 태양계에 있는 다른 모든 행성들을 합한 질량의 약 2.5배에 이른다.
+                </p>
+                <a href="#none">Read More</a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="front">
+                <img src="../../images/practical/ui_space-03.png" alt="Saturnus">
+                <h2>Saturnus</h2>
+            </div>
+            <div class="back">
+                <p>
+                    토성은 태양으로부터 여섯 번째에 있는 태양계의 행성으로, 진성(鎭星)으로도 불렀다. 토성은 태양계 내의 행성 중 목성에 이어 두 번째로 크며, 지름은 약 12만 킬로미터이다.
+                </p>
+                <a href="#none">Read More</a>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>

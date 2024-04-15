@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>위 아래 전환되는 네비/content attr을 활용한 텍스트 네비게이션</title>
+    <style>
+        body {
+            margin: 0;
+            background: linear-gradient(180deg,#dce35b,#45b649);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        a{
+            text-decoration: none;
+            color: #333;
+        }
+        .gnb {
+            background: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.195);
+        }
+        .gnb a {
+            position: relative;
+            display: inline-block;
+            width: 80px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            overflow: hidden;
+        }
+        .gnb a span {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            transition: 0.3s;
+        }
+        .gnb a span:nth-child(1) {
+            top: 0;
+            left: 0;
+        }
+        .gnb a span:nth-child(2) {
+            top: 100%;
+            color: #45b649;
+        }
+        .gnb a:hover span:nth-child(1) {
+            top: -100%;
+        }
+        .gnb a:hover span:nth-child(2) {
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="gnb">
+        <a href="#none">
+            <span>메일</span>
+            <span>메일</span>
+        </a>
+        <a href="#none">
+            <span>카페</span>
+            <span>카페</span>
+        </a>
+        <a href="#none">
+            <span>블로그</span>
+            <span>블로그</span>
+        </a>
+        <a href="#none">
+            <span>지식iN</span>
+            <span>지식iN</span>
+        </a>
+        <a href="#none">
+            <span>쇼핑</span>
+            <span>쇼핑</span>
+        </a>
+        <a href="#none">
+            <span>사전</span>
+            <span>사전</span>
+        </a>
+        <a href="#none">
+            <span>Pay</span>
+            <span>Pay</span>
+        </a>
+        <a href="#none">
+            <span>뉴스</span>
+            <span>뉴스</span>
+        </a>
+    </div>
+</body>
+</html>

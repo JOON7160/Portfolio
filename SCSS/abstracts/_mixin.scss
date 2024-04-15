@@ -1,0 +1,39 @@
+@mixin center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+//ir 
+@mixin hide {
+    overflow: hidden;
+    position: absolute;
+    border: none;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+//bxshadow/bdrs
+@mixin bxshadow {
+    box-shadow: 0 0 10px $black45;
+    border-radius: 20px;
+    @content;
+}
+
+//link:hover,active
+@mixin hover {
+    background: $black28;
+    color: $whiteff;
+}
+@mixin active {
+    transform: scale(0.9);
+}
+
+//responsive
+@mixin mobile {
+    @media (min-width: 0px) and (max-width: $web) {
+        @content;
+    }
+}
