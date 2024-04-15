@@ -1,0 +1,6 @@
+[submodule "mydata-clone"]
+	path = mydata-clone
+	url = https://github.com/JOON7160/mydata-clone
+[submodule "novita-clone"]
+	path = novita-clone
+	url = https://github.com/JOON7160/novita-clone
