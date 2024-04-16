@@ -283,60 +283,60 @@ h2 {
 
 /* slide */
 .ui__slide1 .cont__image {
-  background-image: url("/ui_01.jpeg");
+  background-image: url("/images/main/ui_01.jpeg");
 }
 .ui__slide2 .cont__image {
-  background-image: url("/ui_02.jpeg");
+  background-image: url("/images/main/ui_02.jpeg");
 }
 .ui__slide3 .cont__image {
-  background-image: url("/ui_03.jpeg");
+  background-image: url("/images/main/ui_03.jpeg");
 }
 .ui__slide4 .cont__image {
-  background-image: url("/ui_04.jpeg");
+  background-image: url("/images/main/ui_04.jpeg");
 }
 .ui__slide5 .cont__image {
-  background-image: url("/ui_05.jpeg");
+  background-image: url("/images/main/ui_05.jpeg");
 }
 .ui__slide6 .cont__image {
-  background-image: url("/ui_06.jpeg");
+  background-image: url("/images/main/ui_06.jpeg");
 }
 .ui__slide7 .cont__image {
-  background-image: url("/ui_07.jpeg");
+  background-image: url("/images/main/ui_07.jpeg");
 }
 
 .effects__slide1 .cont__image {
-  background-image: url("/effect_01.png");
+  background-image: url("/images/main/effect_01.png");
 }
 .effects__slide2 .cont__image {
-  background-image: url("/effect_02.png");
+  background-image: url("/images/main/effect_02.png");
 }
 .effects__slide3 .cont__image {
-  background-image: url("/effect_03.png");
+  background-image: url("/images/main/effect_03.png");
 }
 .effects__slide4 .cont__image {
-  background-image: url("/effect_04.png");
+  background-image: url("/images/main/effect_04.png");
 }
 .effects__slide5 .cont__image {
-  background-image: url("/effect_05.png");
+  background-image: url("/images/main/effect_05.png");
 }
 
 .form__slide1 .cont__image {
-  background-image: url("/form_01.jpeg");
+  background-image: url("/images/main/form_01.jpeg");
 }
 .form__slide2 .cont__image {
-  background-image: url("/form_02.jpeg");
+  background-image: url("/images/main/form_02.jpeg");
 }
 .form__slide3 .cont__image {
-  background-image: url("/form_03.jpeg");
+  background-image: url("/images/main/form_03.jpeg");
 }
 .form__slide4 .cont__image {
-  background-image: url("/form_04.jpeg");
+  background-image: url("/images/main/form_04.jpeg");
 }
 .form__slide5 .cont__image {
-  background-image: url("/form_05.jpeg");
+  background-image: url("/images/main/form_05.jpeg");
 }
 .form__slide6 .cont__image {
-  background-image: url("/form_06.jpeg");
+  background-image: url("/images/main/form_06.jpeg");
 }
 
 #website {
@@ -444,7 +444,7 @@ h2 {
   background-color: #9BAEC8;
 }
 .website-tabs__content1 .webcont__image {
-  background-image: url("/website_01.png");
+  background-image: url("/images/main/website_01.png");
   background-position: top;
   background-size: cover;
   transition: 10s;
@@ -464,7 +464,7 @@ h2 {
   }
 }
 .website-tabs__content2 .webcont__image {
-  background-image: url("/website_02.png");
+  background-image: url("/images/main/website_02.png");
   background-position: top;
   background-size: cover;
   transition: 10s;
