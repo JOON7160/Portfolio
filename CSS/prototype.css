@@ -68,3 +68,9 @@ body {
 .close-nav.active {
     right: 0;
 }
+@media (min-width: 374px) and (max-width: 768px) {
+    .front,
+    .back {
+        font-size: 25px;
+    }
+}

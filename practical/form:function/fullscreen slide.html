@@ -166,6 +166,38 @@
         input[id=trigger]:checked ~ .btn {
             left: 0;
         }
+        @media (min-width: 374px) and (max-width: 768px) {
+            .tab-inner {
+                width: 100%;
+            }
+            .trigger {
+                left: 80%;
+            }
+            input[id=trigger]:checked ~.trigger {
+            left: 35%
+        }
+        .btn {
+            left: 100%;
+        }
+        input[id=trigger]:checked ~ .btn {
+            left: 50%;
+        }
+        .items li {
+
+        }
+        .items li h2 {
+            opacity: 0;
+            font-size: 40px;
+            transition: 1s;
+        }
+        input[id=slide1]:checked ~ .items li:nth-of-type(1) h2, 
+        input[id=slide2]:checked ~ .items li:nth-of-type(2) h2, 
+        input[id=slide3]:checked ~ .items li:nth-of-type(3) h2 {
+            top: 50%;
+            transition-delay: 0.3s;
+            opacity: 1;
+        }
+        }
     </style>
 </head>
 <body>
