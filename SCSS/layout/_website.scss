@@ -7,7 +7,68 @@
             padding: 100px 0;
         }
 }
-
+/* tab */
+.website-tabs {
+    width: 220px;
+    height: 230px;
+    padding: 20px;
+    box-shadow: 0 0 10px $black45;
+    flex-direction: column;
+    border-radius: 10px;
+    @include mobile {
+        box-shadow: none;
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+    }
+    .tab {
+        label {
+            position: relative;
+            background: transparent;
+            &::after {
+                position: absolute;
+                bottom: 0;
+                content: "";
+                width: 0;
+                height: 40%;
+                background-color: $lightblue9b;
+                z-index: -1;
+                transition: 0.3s;
+            }
+        }
+        /* 탭 구현 */
+        input[name=website]:checked + label::after {
+            width: 100%;
+            height: 40%;
+            background-color: $lightblue9b;
+        }
+    }
+    /* 탭별 background image */
+    &__content {
+        @for $w from 1 through 2 {
+            &#{$w} {
+                .webcont__image {
+                    background-image: url('#{$bgurl}'+'website_0'+'#{$w}'+'.png');
+                    background-position: top;
+                    background-size: cover;
+                    transition: 10s;
+                    height: 500px;
+                    @media (hover: hover) {
+                        &:hover {
+                            background-position: bottom;
+                        }
+                    }
+                    @include mobile {
+                        width: 100%;
+                        height: 300px;
+                        border-radius: 10px;
+                        transition: none;
+                    }
+                }
+            }
+        }
+    }
+}
 .website-content {
     display: flex;
     margin-top: 100px;
@@ -45,65 +106,8 @@
         }
     }
 }
-.website-tabs {
-    width: 220px;
-    height: 230px;
-    padding: 20px;
-    box-shadow: 0 0 10px $black45;
-    flex-direction: column;
-    border-radius: 10px;
-    @include mobile {
-        box-shadow: none;
-        flex-direction: row;
-        width: 100%;
-        height: auto;
-    }
-    .tab {
-        label {
-            position: relative;
-            background: transparent;
-            &::after {
-                position: absolute;
-                bottom: 0;
-                content: "";
-                width: 0;
-                height: 40%;
-                background-color: $lightblue9b;
-                z-index: -1;
-                transition: 0.3s;
-            }
-        }
-        input[name=website]:checked + label::after {
-            width: 100%;
-            height: 40%;
-            background-color: $lightblue9b;
-        }
-    }
-    &__content {
-        @for $w from 1 through 2 {
-            &#{$w} {
-                .webcont__image {
-                    background-image: url('#{$bgurl}'+'website_0'+'#{$w}'+'.png');
-                    background-position: top;
-                    background-size: cover;
-                    transition: 10s;
-                    height: 500px;
-                    @media (hover: hover) {
-                        &:hover {
-                            background-position: bottom;
-                        }
-                    }
-                    @include mobile {
-                        width: 100%;
-                        height: 300px;
-                        border-radius: 10px;
-                        transition: none;
-                    }
-                }
-            }
-        }
-    }
-}
+
+/* info text, link */
 .info {
     &__detail {
         padding: 10px 20px;
@@ -155,9 +159,6 @@
             }
         }
         .top_cont {
-            .list_1st {
-                
-            }
         }
         .btm_cont {
             font-family: $kr-font;

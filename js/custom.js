@@ -10,11 +10,11 @@ $(function(){
     })
     //swiper
     var uiSwiper = new Swiper(".ui__swiper", {
-        // slidesPerView: "3",
-        // spaceBetween: 70,
+        slidesPerView: "1",
+        spaceBetween: 10,
         centeredSlides: true,
         loop: true,
-        loopedSlided: 1,
+        loopedSlided: 3,
         navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -34,11 +34,11 @@ $(function(){
         },
     });
     var effectsSwiper = new Swiper(".effects__swiper", {
-        // slidesPerView: "3",
-        // spaceBetween: 70,
+        slidesPerView: "1",
+        spaceBetween: 10,
         centeredSlides: true,
         loop: true,
-        loopedSlided: 1,
+        loopedSlided: 3,
         navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -58,11 +58,11 @@ $(function(){
         },
     });
     var formSwiper = new Swiper(".form__swiper", {
-        // slidesPerView: "3",
-        // spaceBetween: 70,
+        slidesPerView: "1",
+        spaceBetween: 10,
         centeredSlides: true,
         loop: true,
-        loopedSlided: 1,
+        loopedSlided: 3,
         navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",

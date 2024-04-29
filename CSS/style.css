@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css);
@@ -94,7 +95,7 @@ h2 {
 }
 @media (min-width: 0px) and (max-width: 1280px) {
   #intro {
-    height: 60vh;
+    height: 100vh;
   }
 }
 
@@ -351,63 +352,7 @@ h2 {
   }
 }
 
-.website-content {
-  display: flex;
-  margin-top: 100px;
-  width: 100%;
-  gap: 30px;
-}
-@media (min-width: 0px) and (max-width: 1280px) {
-  .website-content {
-    flex-direction: column;
-  }
-}
-.website-content:has(.tab:nth-of-type(1) input[type=radio]:checked) .website-tabs__content1 {
-  display: flex;
-}
-@media (min-width: 0px) and (max-width: 1280px) {
-  .website-content:has(.tab:nth-of-type(1) input[type=radio]:checked) .website-tabs__content1 {
-    flex-direction: column;
-  }
-}
-.website-content:has(.tab:nth-of-type(2) input[type=radio]:checked) .website-tabs__content2 {
-  display: flex;
-}
-@media (min-width: 0px) and (max-width: 1280px) {
-  .website-content:has(.tab:nth-of-type(2) input[type=radio]:checked) .website-tabs__content2 {
-    flex-direction: column;
-  }
-}
-.website-content:has(.tab:nth-of-type(3) input[type=radio]:checked) .website-tabs__content3 {
-  display: flex;
-}
-@media (min-width: 0px) and (max-width: 1280px) {
-  .website-content:has(.tab:nth-of-type(3) input[type=radio]:checked) .website-tabs__content3 {
-    flex-direction: column;
-  }
-}
-.website-content .webcont {
-  width: 100%;
-  display: none;
-  gap: 30px;
-  justify-content: space-between;
-}
-.website-content .webcont__image {
-  width: 70%;
-  height: 500px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.45);
-  border-radius: 20px;
-}
-.website-content .webcont__desc {
-  width: 30%;
-  background: #fff;
-}
-@media (min-width: 0px) and (max-width: 1280px) {
-  .website-content .webcont__desc {
-    width: 100%;
-  }
-}
-
+/* tab */
 .website-tabs {
   width: 220px;
   height: 230px;
@@ -415,6 +360,7 @@ h2 {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.45);
   flex-direction: column;
   border-radius: 10px;
+  /* 탭별 background image */
 }
 @media (min-width: 0px) and (max-width: 1280px) {
   .website-tabs {
@@ -423,6 +369,9 @@ h2 {
     width: 100%;
     height: auto;
   }
+}
+.website-tabs .tab {
+  /* 탭 구현 */
 }
 .website-tabs .tab label {
   position: relative;
@@ -484,6 +433,64 @@ h2 {
   }
 }
 
+.website-content {
+  display: flex;
+  margin-top: 100px;
+  width: 100%;
+  gap: 30px;
+}
+@media (min-width: 0px) and (max-width: 1280px) {
+  .website-content {
+    flex-direction: column;
+  }
+}
+.website-content:has(.tab:nth-of-type(1) input[type=radio]:checked) .website-tabs__content1 {
+  display: flex;
+}
+@media (min-width: 0px) and (max-width: 1280px) {
+  .website-content:has(.tab:nth-of-type(1) input[type=radio]:checked) .website-tabs__content1 {
+    flex-direction: column;
+  }
+}
+.website-content:has(.tab:nth-of-type(2) input[type=radio]:checked) .website-tabs__content2 {
+  display: flex;
+}
+@media (min-width: 0px) and (max-width: 1280px) {
+  .website-content:has(.tab:nth-of-type(2) input[type=radio]:checked) .website-tabs__content2 {
+    flex-direction: column;
+  }
+}
+.website-content:has(.tab:nth-of-type(3) input[type=radio]:checked) .website-tabs__content3 {
+  display: flex;
+}
+@media (min-width: 0px) and (max-width: 1280px) {
+  .website-content:has(.tab:nth-of-type(3) input[type=radio]:checked) .website-tabs__content3 {
+    flex-direction: column;
+  }
+}
+.website-content .webcont {
+  width: 100%;
+  display: none;
+  gap: 30px;
+  justify-content: space-between;
+}
+.website-content .webcont__image {
+  width: 70%;
+  height: 500px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.45);
+  border-radius: 20px;
+}
+.website-content .webcont__desc {
+  width: 30%;
+  background: #fff;
+}
+@media (min-width: 0px) and (max-width: 1280px) {
+  .website-content .webcont__desc {
+    width: 100%;
+  }
+}
+
+/* info text, link */
 .info__detail {
   padding: 10px 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.45);
