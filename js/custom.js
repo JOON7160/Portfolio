@@ -10,11 +10,9 @@ $(function(){
     })
     //swiper
     var uiSwiper = new Swiper(".ui__swiper", {
-        slidesPerView: "1",
-        spaceBetween: 10,
+        slidesPerView: "auto",
         centeredSlides: true,
         loop: true,
-        loopedSlided: 3,
         navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -25,6 +23,9 @@ $(function(){
         breakpoints: {
             640: {
             slidesPerView: 1,
+            },
+            720: {
+            slidesPerView: 3,
             spaceBetween: 20,
             },
             1024: {
@@ -34,11 +35,9 @@ $(function(){
         },
     });
     var effectsSwiper = new Swiper(".effects__swiper", {
-        slidesPerView: "1",
-        spaceBetween: 10,
+        slidesPerView: "auto",
         centeredSlides: true,
         loop: true,
-        loopedSlided: 3,
         navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -58,11 +57,9 @@ $(function(){
         },
     });
     var formSwiper = new Swiper(".form__swiper", {
-        slidesPerView: "1",
-        spaceBetween: 10,
+        slidesPerView: "auto",
         centeredSlides: true,
         loop: true,
-        loopedSlided: 3,
         navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -73,7 +70,7 @@ $(function(){
         breakpoints: {
             640: {
             slidesPerView: 1,
-            spaceBetween: 20,
+            spaceBetween: 30,
             },
             1024: {
             slidesPerView: 3,
